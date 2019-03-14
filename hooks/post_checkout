@@ -1,0 +1,6 @@
+#!/bin/bash
+##  
+# Apparently docker hub does submodule updates only in main branch
+# https://forums.docker.com/t/automated-builds-with-submodules/33797
+##
+git submodule update --init --recursive
