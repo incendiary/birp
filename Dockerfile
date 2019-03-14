@@ -24,7 +24,7 @@ RUN ./configure --enable-static && make && make install
 
 #FROM python:2.7-alpine as birp
 
-from ubuntu:16.04 as birp
+from debian:jessie-slim as birp
 
 #not need in final image?
 RUN apt-get update && apt-get install -y tree python python-pip libxaw7 && rm -rf /var/lib/apt/lists/*
