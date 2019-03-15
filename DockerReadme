@@ -2,7 +2,7 @@ Dockerisation
 --------
 Dockerisation should now work.  Build or Pull, then run with something similar to:
 
-docker run -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix incinders/birp  <BIRP options>
+docker run -it -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix incinders/birp-bigironreconandpwnage  <BIRP options>
 
 eg
 ```
