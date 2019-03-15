@@ -11,7 +11,7 @@ RUN mkdir /app
 WORKDIR /app
 
 RUN apt-get update && apt-get install -y tree wget build-essential git automake libxt-dev libxmu-headers xfonts-utils  xfonts-x3270-misc libxaw7-dev s3270 libncurses-dev tclsh tcl8.6-dev\
- && wget https://sourceforge.net/projects/x3270/files/x3270/3.6ga5/suite3270-3.6ga5-src.tgz/download \
+ && wget https://sourceforge.net/projects/x3270/files/x3270/3.6ga4/suite3270-3.6ga4-src.tgz/download \
  && tar xzf download
 
 WORKDIR /app/suite3270-3.6
