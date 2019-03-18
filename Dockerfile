@@ -24,7 +24,7 @@ RUN ./configure --enable-static && make && make install
 
 #FROM python:2.7-alpine as birp
 
-from jlesage/baseimage-gui as birp
+from jlesage/baseimage-gui@ubuntu-18.04 as birp
 
 RUN mkdir /app
 
