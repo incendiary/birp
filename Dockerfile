@@ -30,7 +30,10 @@ WORKDIR /app
 
 COPY ["birp.py","getch.py","py3270wrapper.py","requirements.txt","tn3270.py", "/app/"]
 
-RUN sed -i "s_./x3270_/app/bins/x3270_g" py3270wrapper.py \
+RUN apk update
+ && apk upgrade
+ && apk add --no-cache git
+ && sed -i "s_./x3270_/app/bins/x3270_g" py3270wrapper.py \
  && sed -i "s_'s3270'_'/app/bins/s3270'_g" py3270wrapper.py \
  && git clone https://github.com/singe/py3270 \
  && cd py3270 \
