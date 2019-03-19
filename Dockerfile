@@ -38,10 +38,7 @@ RUN apk update \
  && git clone https://github.com/singe/py3270 \
  && cd py3270 \
  && python setup.py install \
- && pip install -r /app/requirements.txt \
- && apt-get remove git -y\
- && apt-get autoclean  \
- && rm -rf /var/lib/apt/lists/*
+ && pip install -r /app/requirements.txt 
 
 COPY --from=suite3270builder /usr/local/bin/ /app/bins/
 
